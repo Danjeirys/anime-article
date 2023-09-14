@@ -1,0 +1,15 @@
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    color: white;
+}
+
+div {
+    margin: 5px;
+    padding: 10px;
+}
