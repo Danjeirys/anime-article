@@ -2,3 +2,15 @@
     width: 50vw;
     height: 450px;
 }
+
+
+#artistLink {
+    color: black;
+    text-decoration: none;
+}
+
+
+#upRight {
+    width: 30vw;
+    height: 45vw;
+}
