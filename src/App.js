@@ -1,20 +1,45 @@
-import Header from './components/Header/header';
+
 import './App.css';
-import Body from './components/Body/body';
-import Footer from './components/Footer/footer';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Homepage from './components/Homepage';
+import About from './Pages/about'
+import Suggestions from './components/Suggestions/suggestion';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Header></Header>
-      </header>
-      <Body></Body>
-      <footer className='footer'>
-        <Footer></Footer>
-        </footer>
-      
-    </div>
+    <>
+    <Router>
+      <nav id = 'nav'>
+                <ul>
+                    <li>
+                      <Link to="/">Home</Link>
+                    </li>
+                    
+                    <li>
+                      <Link to="/about">About</Link>
+                    </li>
+                    
+                    <li>
+                      <Link to="/suggestions">Suggestions</Link>
+                    </li>
+
+                    <li>
+                      <Link to="/fanart">Fanart</Link>
+                    </li>
+                </ul>
+        </nav>
+      <div className="App">
+
+          <Routes>
+            <Route path='/' element={<Homepage/> } />
+            <Route path='/about' element={<About /> } /> 
+            <Route path='/suggestions' element={<Suggestions/> } />
+          </Routes>
+        
+      </div>
+    </Router>
+    </>
   );
 }
 

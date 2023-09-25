@@ -2,7 +2,14 @@
   text-align: center;
 }
 
-.App-header {
+ul, li, Link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+#nav {
   background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/558/893/small/abstract-dark-black-geometric-hexagonal-mesh-material-header-metallic-technology-banner-with-blank-space-for-your-logo-abstract-widescreen-background-vector.jpg');
   background-size: cover;
   background-repeat: no-repeat;
